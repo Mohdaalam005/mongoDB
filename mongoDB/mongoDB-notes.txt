@@ -1,0 +1,50 @@
+1) install mongoDB
+2) install mongoShell
+
+--- environment varaible setup
+   - add mongodb path
+   - add mongosh path
+
+3) create file in C drive
+ - data 
+   - db  (note data/db)
+
+4) Run MongoDB
+  - start mongod --> type mongod in cmd 
+  - start mongosh  --> type mongosh in cmd
+
+-----------------------------------
+1) show dbs  ----> to show the data base 
+
+-----------------------------------------
+create Collection 
+-----------------
+
+--> db.createCollection("student")    --cmd
+
+to show collection
+---------------
+--> show collection     		--cmd
+---------------------------------------------
+insert
+-----
+db.collectionName.insertOne({"_id" 1, "name" :"bob"})
+
+find all document
+-----------------
+db.collectionName.find()
+
+find document By Id 
+-------------------
+db.collectionName.find({"_id":1});
+
+delete document By id
+---------------------
+
+db.collectionName.deleteOne({"_id":1})
+
+
+update document by id
+---------------------
+
+db.collectionName.updateOne({"_id":2},{$set : {"title":"developer"}})
